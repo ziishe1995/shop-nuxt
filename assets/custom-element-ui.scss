@@ -1,0 +1,43 @@
+/* 改变主题色变量 */
+$--color-primary: #ff443f;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+.el-pagination.is-background .btn-prev, .el-pagination.is-background .btn-next, .el-pagination.is-background .el-pager li {
+  border: 1px solid #999;
+  margin: 0 4px;
+  min-width: 25px;
+  border-radius: 2px;
+  color: #888;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled).active {
+  background-color: $--color-primary;
+  color: #FFFFFF;
+  border-color: $--color-primary;
+}
+
+.el-pagination.is-background .btn-prev:disabled, .el-pagination.is-background .btn-next:disabled {
+  color: #999;
+  background: #fff;
+  border-color: #ddd;
+}
+
+.el-pagination.is-background .el-pager li:not(.disabled):hover {
+  color: $--color-primary;
+  border-color: $--color-primary
+}
+
+.el-message-box__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .el-message-box {
+    margin: 15px;
+  }
+}
+
+
