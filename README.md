@@ -1,6 +1,6 @@
 # Nuxt-Frontend
 
-> My swell Nuxt.js project
+> Nuxt.js project
 
 ## Build Setup
 

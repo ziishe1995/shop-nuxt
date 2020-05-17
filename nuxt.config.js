@@ -32,22 +32,10 @@ module.exports = {
       { name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/images/favicon.png' },
-      { rel: 'stylesheet', href: '/bootstrap/css/bootstrap.css' },
-      { rel: 'stylesheet', href: '/fonts/font-awesome/css/font-awesome.css' },
-      { rel: 'stylesheet', href: '/fonts/webfonts/style.css' },
-      { rel: 'stylesheet', href: '/plugins/slick/slick.css' },
-      { rel: 'stylesheet', href: '/plugins/slick/slick-theme.css' },
-      { rel: 'stylesheet', href: '/plugins/fancyBox/jquery.fancybox.css' },
-      { rel: 'stylesheet', href: '/css/style.css' }
+      { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css' }
     ],
     script: [
-      { type: 'text/javascript', src: '/plugins/jquery.min.js' },
-      { type: 'text/javascript', src: '/bootstrap/js/bootstrap.min.js' },
-      { type: 'text/javascript', src: '/plugins/modernizr.js' },
-      { type: 'text/javascript', src: '/plugins/fancyBox/jquery.fancybox.pack.js' },
-      { type: 'text/javascript', src: '/plugins/slick/slick.js' },
-      { type: 'text/javascript', src: '/js/script.js' }
+      { type: 'text/javascript', src: 'https://code.jquery.com/jquery-3.3.1.slim.min.js' }
     ]
   },
   /*
@@ -60,7 +48,8 @@ module.exports = {
   */
   css: [
     'element-ui/lib/theme-chalk/index.css',
-    './assets/main.scss'
+    './assets/main.scss',
+    './static/scss/TLstyle.scss'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -103,7 +92,7 @@ module.exports = {
         autoFetchUser: false
       }
     },
-    localStorage: false,
+    localStorage: true,
     watchLoggedIn: false,
     redirect: {
       login: '/',

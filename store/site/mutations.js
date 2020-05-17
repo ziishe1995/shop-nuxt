@@ -1,17 +1,20 @@
 export default {
-  gotSubPageContent (state, data) {
-    state.subPageContent = data
-  },
-  gotInfo (state, data) {
-    state.info = data
-  },
-  gotFaq (state, data) {
-    state.faq = data
-  },
-  gotFaqTotal (state, data) {
-    state.faqTotal = data
-  },
-  changeAppPopupShownStatus (state, boolean) {
-    state.shownAppPopup = boolean
+  gotMenu (state) {
+    const data = [
+      {
+        id: 1,
+        name: 'Fashion'
+      },
+      {
+        id: 2,
+        name: 'Antiques'
+      },
+      {
+        id: 3,
+        name: 'Food'
+      }
+    ]
+    //
+    state.menu = data
   }
 }
