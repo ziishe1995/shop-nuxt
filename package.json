@@ -23,7 +23,7 @@
     "error-mapper": "^1.0.4",
     "jquery": "^3.4.1",
     "koa": "^2.6.2",
-    "lodash": "^4.17.15",
+    "lodash": "^4.17.19",
     "memorystore": "^1.6.2",
     "modular-api": "^1.0.8",
     "moment": "^2.24.0",
